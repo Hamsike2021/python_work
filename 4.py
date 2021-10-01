@@ -1,3 +1,4 @@
-hours, minute, seconds = int(input('Введите кол - во часов: ')), int(input('Введите кол - во минут: ')), int(input('Введите кол - во секунд: '))
-time = hours * 60 * 60 + minute * 60 + seconds
-print(f'Время в пути в секундах: {time} с')
+time = input('Введите время в пути в формате часы:минуты:секунды ')
+s = [int(i) for i in time.split(':')]
+time_second = s[0] * 60 * 60 + s[1] * 60 + s[2]
+print(f'Время в пути в секундах: {time_second}с')
